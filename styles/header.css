@@ -81,7 +81,7 @@
   justify-content: center;
   transform: scale(.5,0);
   transform-origin:top;
-  transition: transform 400ms ease-in-out;
+  transition: transform 600ms ease-in-out;
 
 }
 

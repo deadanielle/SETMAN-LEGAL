@@ -53,12 +53,12 @@ h2.title:hover{
     font-size: clamp(1rem, calc(1.35rem + 1vw), 3.75rem);
 }
 .content{
-    font-size: 15px;
+    font-size: 14px;
     /* max-width: 600px; */
     text-align:justify;
     margin-top: 0.8rem;
     /* border: 1px solid red; */
-    word-spacing: -2px;
+    word-spacing: -1.9px;
 }
 
 

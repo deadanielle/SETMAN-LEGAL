@@ -109,20 +109,20 @@ const navActiveStates = document.querySelectorAll('.nav_link');
 
 
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-        if(top >= offset && top < offset + height) {
-            navActiveStates.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
-    });
-};
+// window.onscroll = () => {
+//     sections.forEach(sec => {
+//         let top = window.scrollY;
+//         let offset = sec.offsetTop - 150;
+//         let height = sec.offsetHeight;
+//         let id = sec.getAttribute('id');
+//         if(top >= offset && top < offset + height) {
+//             navActiveStates.forEach(links => {
+//                 links.classList.remove('active');
+//                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+//             });
+//         };
+//     });
+// };
 
 
 //partners
@@ -286,14 +286,15 @@ $('.testimonial_card_slider').slick({
   autoplaySpeed:2000,
   focusOnSelect:true,
   slidesToShow: 3,
+  variableWidth:true,
   responsive: [
     {
       breakpoint: 767,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 3
+        centerPadding: '40px',
+        slidesToShow: 1
       }
     },
     {
